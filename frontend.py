@@ -4,19 +4,16 @@ from openai import OpenAI
 from dotenv import load_dotenv
 import os
 
-# --- Load env variables ---
 load_dotenv()
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 if not OPENAI_API_KEY:
     raise ValueError("OPENAI_API_KEY not found. Did you create a .env file?")
-# --- Config ---
 
 client = OpenAI(api_key=OPENAI_API_KEY)
 
-st.title("📄 Teams Meeting Transcript Summariser")
+st.title("Teams Meeting Transcript Summariser")
 st.write("Upload a `.vtt` file from Microsoft Teams and get AI-generated meeting notes.")
 
-# File upload
 uploaded_file = st.file_uploader("Upload Teams Transcript (.vtt)", type=["vtt"])
 
 if uploaded_file:
