@@ -17,7 +17,6 @@ st.write("Upload a `.vtt` file from Microsoft Teams and get AI-generated meeting
 uploaded_file = st.file_uploader("Upload Teams Transcript (.vtt)", type=["vtt"])
 
 if uploaded_file:
-    # Read and clean
     raw_text = uploaded_file.read().decode("utf-8")
     clean_text = re.sub(r"\d{2}:\d{2}:\d{2}\.\d{3} --> \d{2}:\d{2}:\d{2}\.\d{3}", "", raw_text)
     clean_text = re.sub(r"WEBVTT|Kind: captions|Language: \w+", "", clean_text)
