@@ -8,10 +8,14 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 
 load_dotenv()
-OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+#make sure that my app works both in my local environment as well as the cloud
+# OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
-EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
-EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+# EMAIL_ADDRESS = os.getenv("EMAIL_ADDRESS")
+# EMAIL_PASSWORD = os.getenv("EMAIL_PASSWORD")
+OPENAI_API_KEY = st.secrets.get("OPENAI_API_KEY", os.getenv("OPENAI_API_KEY"))
+EMAIL_ADDRESS = st.secrets.get("EMAIL_ADDRESS", os.getenv("EMAIL_ADDRESS"))
+EMAIL_PASSWORD = st.secrets.get("EMAIL_PASSWORD", os.getenv("EMAIL_PASSWORD"))
 
 if not OPENAI_API_KEY:
     raise ValueError("OPENAI_API_KEY not found. Did you create a .env file?")
