@@ -55,4 +55,17 @@ In StreamLit Cloud login with your github account. Click >> "New app" >> "Deploy
    EMAIL_ADDRESS="your_email@gmail.com"
    EMAIL_PASSWORD="your_email_password_or_app_password"
    ```
+5. ## Requirements
+   - Python 3.9+
+   - Streamlit
+   - OpenAI Python SDK
+   - python-dotenv
+6. ## Email Functionality
+   - Emails are sent via Gmail’s SMTP server.
+   - You can send summaries to multiple recipients (comma-separated).
+7. ## Security Notes
+   - Never commit your .env file or credentials.
+   - Use environment variables or Streamlit Secrets Manager in production.
+8. ## License
+   - MIT License – feel free to use and adapt.
 
