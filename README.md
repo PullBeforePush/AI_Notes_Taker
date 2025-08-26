@@ -26,4 +26,23 @@ You can also email the generated summary to multiple recipients directly from th
    ```
    git clone https://github.com/PullBeforePush/AI_Notes_Taker.git
    ```
+2. Create a virtual environment & install dependencies
+   ```
+    python -m venv venv
+    source venv/bin/activate   # Mac/Linux
+    venv\Scripts\activate      # Windows
+
+    pip install -r requirements.txt
+   ```
+3. Set up environment variables
+   Create a .env file in the project root with:
+   ```
+   OPENAI_API_KEY=your_openai_api_key
+   EMAIL_ADDRESS=your_email@gmail.com
+   EMAIL_PASSWORD=your_email_password_or_app_password
+   ```
+4. Run the app
+   ```
+   streamlit run app.py
+   ```
 
