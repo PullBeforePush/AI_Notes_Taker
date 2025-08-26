@@ -58,7 +58,7 @@ In StreamLit Cloud login with your github account. Click >> "New app" >> "Deploy
 5. ## Requirements
    - Python 3.9+
    - Streamlit
-   - OpenAI Python SDK
+   - [OpenAI Python SDK](https://platform.openai.com/)
    - python-dotenv
 6. ## Email Functionality
    - Emails are sent via Gmail’s SMTP server.
