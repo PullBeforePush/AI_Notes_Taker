@@ -38,11 +38,21 @@ You can also email the generated summary to multiple recipients directly from th
    Create a .env file in the project root with:
    ```
    OPENAI_API_KEY=your_openai_api_key
-   EMAIL_ADDRESS=your_email@gmail.com
+   EMAIL_ADDRESS=example@gmail.com
    EMAIL_PASSWORD=your_email_password_or_app_password
    ```
+   NB: The password for the sender gmail is not the one you use on daily basis but you must generate it on Gmail App Password under security settings.
 4. Run the app
    ```
    streamlit run app.py
+   ```
+## Deployment
+- So I have deployed this app on Streamlit Cloud for free. What you have to do is to make sure you push your code files in github excluding the .env file.
+In StreamLit Cloud login with your github account. Click >> "New app" >> "Deploy". Then you can name the generated domain.
+- Add your secrets under Settings → Secrets in this format:
+   ```
+   OPENAI_API_KEY="your_openai_api_key"
+   EMAIL_ADDRESS="your_email@gmail.com"
+   EMAIL_PASSWORD="your_email_password_or_app_password"
    ```
 
