@@ -20,3 +20,10 @@ You can also email the generated summary to multiple recipients directly from th
 - Option to send summary via email to one or more recipients.
 
 - Works locally and when deployed on Streamlit Cloud.
+
+## Installation
+1. Clone the Repo
+   ```
+   git clone https://github.com/PullBeforePush/AI_Notes_Taker.git
+   ```
+
