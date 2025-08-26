@@ -7,7 +7,7 @@ A Streamlit web app that takes Microsoft Teams transcript files (.vtt) and gener
 
 📝 Action items with responsible persons
 
-You can also email the generated summary to multiple recipients directly from the app.
+You can also email the generated summary to multiple recipients directly from the app. Here is the Link to [AI_Notes_Taker](https://aisummary2025.streamlit.app/) try it out it is deployed and ready to use.
 
 ## Features
 
@@ -57,9 +57,9 @@ In StreamLit Cloud login with your github account. Click >> "New app" >> "Deploy
    ```
 5. ## Requirements
    - Python 3.9+
-   - Streamlit
+   - [Streamlit](https://docs.streamlit.io/)
    - [OpenAI Python SDK](https://platform.openai.com/)
-   - python-dotenv
+   - [python-dotenv](https://pypi.org/project/python-dotenv/)
 6. ## Email Functionality
    - Emails are sent via Gmail’s SMTP server.
    - You can send summaries to multiple recipients (comma-separated).
