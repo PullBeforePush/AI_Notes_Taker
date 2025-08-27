@@ -9,6 +9,7 @@ A Streamlit web app that takes Microsoft Teams transcript files (.vtt) and gener
 
 You can also email the generated summary to multiple recipients directly from the app. Here is the Link to [AI_Notes_Taker](https://aisummary2025.streamlit.app/) try it out it is deployed and ready to use.
 
+
 ## Features
 
 - Upload a Microsoft Teams .vtt transcript.
