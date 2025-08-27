@@ -10,11 +10,6 @@ A Streamlit web app that takes Microsoft Teams transcript files (.vtt) and gener
 You can also email the generated summary to multiple recipients directly from the app. Here is the Link to [AI_Notes_Taker](https://aisummary2025.streamlit.app/) try it out it is deployed and ready to use.
 [Watch the demo video](https://github.com/PullBeforePush/AI_Notes_Taker/blob/master/AI_Summarizer.mp4?raw=true)
 
-<video src="https://github.com/PullBeforePush/AI_Notes_Taker/blob/master/AI_Summarizer.mp4?raw=true" controls width="600">
-  Your browser does not support the video tag.
-</video>
-
-
 
 ## Features
 
